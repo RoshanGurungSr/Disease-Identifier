@@ -1,0 +1,136 @@
+{% extends 'partials/base.html' %}
+{% block title %}Disease Identifier || Dashboard {% endblock %}
+
+{% block content %}
+
+	<aside class="left-sidebar">
+		<div class="logo">
+			<a href="#welcome">
+				<h1>Disease Identifier</h1>
+			</a>
+		</div>
+		<nav class="left-nav">
+			<ul id="nav">
+				<li>{% if request.user.is_authenticated %}
+					<a style="pointer-events: none;text-transform: capitalize;font-weight: bold;font-size: 16px;">
+						Welcome, {{request.user.username}}
+					</a>
+					{% endif %}
+				</li>
+				<li class="current"><a href="#welcome">Dashboard</a></li>
+				<li><a href="#installation">Report</a></li>
+				<li><a href="{% url 'logout' %}">Log Out</a></li>
+			</ul>
+		</nav>
+	</aside>
+
+	<div id="main-wrapper">
+		<div class="main-content">
+			<section id="welcome">
+				<div class="content-header">
+					<h1>Dashboard</h1>
+				</div>
+				<div class="welcome">
+
+					<h2 class="twenty">Welcome To Disease Classifier Dashboard</h2>
+
+					<p>Firstly, a huge thanks for making here, your support is truly appreciated!</p>
+
+				</div>
+
+				<div class="col-xs-12 col-sm-6 col-lg-4">
+						<div class="box">							
+						  <div class="icon">
+							  <div class="image"><i class="fa fa-flag"></i></div>
+							<div class="info">
+							  <h3 class="title">Made with CNN</h3>
+							  <p>This system is powered by CNN architecture</p>
+							  
+							</div>
+						  </div>
+						  <div class="space"></div>
+						</div> 
+					  </div>
+						
+						  <div class="col-xs-12 col-sm-6 col-lg-4">
+						<div class="box">							
+						  <div class="icon">
+							  <div class="image"><i class="fa fa-desktop"></i></div>
+							<div class="info">
+							  <h3 class="title">Dataset</h3>
+								<p>The CNN has been trained with 500 images per class</p>
+							  
+							</div>
+						  </div>
+						  <div class="space"></div>
+						</div> 
+					  </div>
+						
+						  <div class="col-xs-12 col-sm-6 col-lg-4">
+						<div class="box">							
+						  <div class="icon">
+							<div class="image"><i class="fa fa-thumbs-o-up"></i></div>
+							<div class="info">
+							  <h3 class="title">Accuracy</h3>
+								<p>The accuracy gained on validation set is 90%</p>
+							  
+							</div>
+						  </div>
+						  <div class="space"></div>
+						</div> 
+					  </div>	
+					  
+
+				<div class="features">
+
+					<div class="inputMain" >
+							
+						<form id="upload-form" method="POST" enctype="multipart/form-data">
+							{% csrf_token%}
+							{{ form.as_p }}
+							<button class="btn_1" type="submit" style="margin-top:2%;">Submit</button>
+									
+						</form>
+						  
+					</div>
+				</div>
+
+			</section>
+
+			<section id="installation">
+				<div class="content-header">
+					<h1>Report</h1>
+				</div>
+				<h2 class="title">View your Report here</h2>
+
+				<div class="section-content">
+					<table class="report-table">
+						<thead>
+							<tr class="w3-red">
+								<th>User</th>
+									<th>Image Url</th>
+									<th>Prediction</th>
+							</tr>
+							</thead>
+							{% for data in showAll %}
+								<tr>
+								<td>{{ data.name }} </td>
+								<td>
+								{{ data.predict_image.url }}</td>
+			
+								<td>{{ data.prediction }} </td>
+										
+								</tr>
+								{% endfor %}
+							</table>
+				</div>
+
+			</section>
+
+
+
+  </div>
+</div>
+
+
+{% endblock %}

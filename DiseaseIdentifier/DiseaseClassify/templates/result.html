@@ -1,0 +1,58 @@
+{% extends 'partials/base.html' %}
+{% block title %}Disease Identifier || Result {% endblock %}
+
+{% block content %}
+
+	<aside class="left-sidebar">
+		<div class="logo">
+			<a href="#welcome">
+				<h1>Disease Identifier</h1>
+			</a>
+		</div>
+		<nav class="left-nav">
+			<ul id="nav">
+				<li>{% if request.user.is_authenticated %}
+					<a style="pointer-events: none;text-transform: capitalize;font-weight: bold;font-size: 16px;">
+						Welcome, {{request.user.username}}
+					</a>
+					{% endif %}
+				</li>
+				<li class="current"><a href="{% url 'home' %}">Dashboard</a></li>
+				<li><a href="{% url 'home' %}">Report</a></li>
+				<li><a href="{% url 'logout' %}">Log Out</a></li>
+			</ul>
+		</nav>
+	</aside>
+
+	<div id="main-wrapper">
+		<div class="main-content">
+			<section id="welcome">
+				<div class="content-header">
+					<h1>Result</h1>
+				</div>
+				
+				<div class="inputImage">
+					<form id="upload-form" action="{% url 'resubmit' %}" style="float:right;">
+						{% csrf_token%}
+						<button type="submit" class="result-button retry">Retry</button>
+					</form>
+					<h4 style="font-family: 'Fira Sans', sans-serif; font-size:30px; padding-bottom: 2%;">The uploaded image</h4>
+					<img src="{{ imagePath.predict_image.url }}" alt="Not Found">
+				</div>
+
+			<div class="inputData" >
+				<p style="font-family: 'Fira Sans', sans-serif;font-size:20px;">The Plant Class: {{ class }}</p> <div class="space"></div>
+				<p style="font-family: 'Fira Sans', sans-serif;font-size:20px;">Prediction: {{ prediction }}</p> 
+
+			</div>
+
+
+			</section>
+
+
+
+  </div>
+</div>
+
+
+{% endblock %}
