@@ -15,10 +15,11 @@ Or you can create virtual environment
 Python3 -m virtualenv envname
 ```
 
-then install library requirements on it
+then install library requirements on it.
 
 Now, change the directory to DiseaseIdentifier and start the server as:
 
 ```python
 python manage.py runserver
 ```
+Copy the hosted url in the browser and you are good to go.
