@@ -26,3 +26,5 @@ Copy the hosted url in the browser and you are good to go.
 
 ## Screenshots of the Applicaiton
 Below given are the screenshots of the project.
+
+![Landing Page](https://github.com/Rosan93/Disease-Identifier/blob/master/Application%20Screenshots/Landing%20Page.png)
