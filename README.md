@@ -24,6 +24,24 @@ python manage.py runserver
 ```
 Copy the hosted url in the browser and you are good to go.
 
+## Convolutional Neural Network
+Below given are the screenshots of Model.
+
+### CNN Architecture
+![CNN ARCHITECTURE](https://github.com/Rosan93/Disease-Identifier/blob/master/CNN%20Architecture%20Screenshots/CNN%20Architecture.png)
+
+### Training Accuracy
+![Training Accuracy](https://github.com/Rosan93/Disease-Identifier/blob/master/CNN%20Architecture%20Screenshots/training%20accuracy.png)
+
+### Training Loss
+![Training Loss](https://github.com/Rosan93/Disease-Identifier/blob/master/CNN%20Architecture%20Screenshots/training%20loss.png)
+
+### Validaion Accuracy
+![Validaion Accuracy](https://github.com/Rosan93/Disease-Identifier/blob/master/CNN%20Architecture%20Screenshots/validation%20accuracy.png)
+
+### Validaion Loss
+![Validaion Loss](https://github.com/Rosan93/Disease-Identifier/blob/master/CNN%20Architecture%20Screenshots/validation%20loss.png)
+
 ## Screenshots of the Application
 Below given are the screenshots of the project.
 
