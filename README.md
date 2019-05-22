@@ -23,3 +23,6 @@ Now, change the directory to DiseaseIdentifier and start the server as:
 python manage.py runserver
 ```
 Copy the hosted url in the browser and you are good to go.
+
+## Screenshots of the Applicaiton
+Below given are the screenshots of the project.
