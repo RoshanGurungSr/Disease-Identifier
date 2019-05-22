@@ -29,3 +29,18 @@ Below given are the screenshots of the project.
 
 ### Landing Page
 ![Landing Page](https://github.com/Rosan93/Disease-Identifier/blob/master/Application%20Screenshots/Landing%20Page.png)
+
+### Signup Page
+![Signup Page](https://github.com/Rosan93/Disease-Identifier/blob/master/Application%20Screenshots/Sign%20Up%20Page.png)
+
+### Login Page
+![Login Page](https://github.com/Rosan93/Disease-Identifier/blob/master/Application%20Screenshots/Login.png)
+
+### Dashboard Page
+![Dashboard Page](https://github.com/Rosan93/Disease-Identifier/blob/master/Application%20Screenshots/Dashboard.png)
+
+### Result Page
+![Result Page](https://github.com/Rosan93/Disease-Identifier/blob/master/Application%20Screenshots/result.png)
+
+### Report Page
+![Report Page](https://github.com/Rosan93/Disease-Identifier/blob/master/Application%20Screenshots/Report.png)
