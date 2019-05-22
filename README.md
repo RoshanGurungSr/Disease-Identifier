@@ -1,5 +1,4 @@
 # Disease-Identifier
-Final Year Project
 This project is developed with Django Web Framework that serves trained CNN architecture to classify the input image into one of the three classes of Apple_healthy, Tomato_healthy and Tomato_Leaf_Mold.
 
 ## Installation
