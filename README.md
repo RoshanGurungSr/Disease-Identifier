@@ -17,3 +17,8 @@ Python3 -m virtualenv envname
 
 then install library requirements on it
 
+Now, change the directory to DiseaseIdentifier and start the server as:
+
+```python
+python manage.py runserver
+```
