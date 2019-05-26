@@ -1,6 +1,9 @@
 # Disease-Identifier
 This project is developed with Django Web Framework that serves trained CNN architecture to classify the input image into one of the three classes of Apple_healthy, Tomato_healthy and Tomato_Leaf_Mold.
 
+## Live Demo
+For live demo. Click [here](https://diseaseidentifier.herokuapp.com/)
+
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install library dependicies for this project.
