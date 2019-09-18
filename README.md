@@ -4,6 +4,9 @@ This project is developed with Django Web Framework that serves trained CNN arch
 ## Live Demo
 For live demo. Click [here](https://diseaseidentifier.herokuapp.com/)
 
+## Demonstration
+![DEMO](https://github.com/Rosan93/Disease-Identifier/blob/master/Application%20Screenshots/Roshan_Project_Demo.mp4)
+
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install library dependicies for this project.
